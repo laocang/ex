@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* CSS Document */
+/* css reset www.admin10000.com */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body { background:#f1f1f1; color:#555; font-size: 14px; }
+/**
+ * 1. 防止元素中「font-family」不能继承
+ * 2. 西文字体和 OS X 字体写在前面
+ * 3. Opera 12.1 之前版本不支持中文字体的英文名称
+ * 4. 微软雅黑「\5FAE\8F6F\96C5\9ED1」,中易宋体「\5B8B\4F53」
+ */
+body,
+button, /* 1 */
+input, /* 1 */
+select, /* 1 */
+textarea  /* 1 */
+{
+ font-family: 'helvetica neue',arial,'hiragino sans gb',stheiti,'wenquanyi micro hei',\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,sans-serif;
+}
+body.wbg{ background: #fff;}
+/*模拟滑动*/
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { color:#555; text-decoration:none; }
+img { border:none; margin: 0 0 0 0; padding: 0 0 0 0; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font-size:14px; }
+table { border-collapse:collapse; }
+html {overflow-y: scroll;} 
+/* css common */
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+/*去除input自动填充时的背景色*/
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill { -webkit-box-shadow: 0 0 0 1000px #11c5d1 inset;}
+input[type=checkbox]:focus, input[type=file]:focus, input[type=radio]:focus{outline: none !important;}
+html,body{ height:100%; }
+input,textarea,select,label{outline: none;-moz-box-sizing: border-box; -webkit-box-sizing:border-box; box-sizing: border-box;font-size-adjust:none; font-stretch:normal; -webkit-tap-highlight-color:rgba(0,0,0,0);   -moz-appearance: none;  -ms-appearance: none;  -o-appearance: none;  appearance: none; outline:none; }
+input,select{ background: transparent; border: none; font-family: 'helvetica neue',arial,'hiragino sans gb',stheiti,'wenquanyi micro hei',\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,sans-serif;}
+input[type="submit"],input[type="button"]{-webkit-appearance: none;}
+/* CSS Document */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+*{-webkit-tap-highlight-color:rgba(255,255,255,0)}
+/*字体颜色*/
+.titlecolor{ color: #4c4c4b;}
+.middlecolor{ color: #818181;}
+.inputcolor{ color: #a9a8af}
+/*框架样式覆盖*/
+.weui-picker-overlay, .weui-picker-container{ z-index:9999;}
+.weui-picker-modal .title{ font-size:15px; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;}
+.weui-picker-modal .picker-button{ font-size:15px; color:#11c5d1;}
+.weui-picker-modal .picker-item{ font-size:15px; text-align:center;}
+.swiper-pagination-bullet-active{ background: #11c5d1;}
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets{ bottom: 3px;}
+.weui_search_bar{ padding: 3px; border-radius: 4px; border: none; background: #fff; height: 36px;}
+.weui_search_cancel{ color: #11c5d1;}
+.weui_actionsheet{ z-index: 9999;}
+.weui_actionsheet_cell{border-bottom: 1px solid #ddd;}
+.weui_btn_dialog.primary{ color: #11c5d1;}
+.weui_search_outer{ background: #fff; border: none;}
+.weui_search_inner,.weui_search_text{ margin-top: 2px;}
+.weui_search_cancel{ margin-right: 5px; margin-top: 3px;}
+.weui_search_inner .weui_icon_search{ top: -1px;}
+.pro-picker, .city-picker{z-index: 9999;}
+.weui_grid{ text-align: center;}
+.weui_grid:before{ border-right: 1px solid #ddd;}
+.weui_dialog.weui_dialog_visible, .weui_toast.weui_dialog_visible, .weui_dialog.weui_toast_visible, .weui_toast.weui_toast_visible{z-index: 10000;}
+
+/*公用样式*/
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px #fff inset;}
+.getcode{ display:block; padding: 0 5px; height: 28px; line-height: 28px; text-align: center; font-size: 12px; color: #11c5d1; border: 1px solid #11c5d1; border-radius: 5px;}
+.getcode.spe{ position: absolute; right: 16px; top: 9px;}
+.getcode.active{ background: #dedede; color: #a9a8af !important; border: 1px solid #d4d4d4;}
+.pop{ width: 100px; height: 50px; text-align: center; line-height: 50px; background: rgba(0,0,0,0.3); position: fixed; left: 50%; top: 50%; margin-left: -50px; margin-top: -25px;  border-radius: 10px; font-size: 17px;}
+.topsearch{ position: fixed; z-index: 99999; box-sizing: border-box; width: 100%; padding: 0 8px 10px 8px; background: #11c5d1;}
+.topsearch .selectplace{ width: 100%; height: 38px; font-size: 17px; color: #fff; text-align: center;;}
+.topsearch  .searchbox{ -webkit-box-sizing: border-box; box-sizing: border-box; width: 100%; border: 1px solid #FFF; border-radius: 4px; position: relative;}
+.topsearch  .searchbox input{  padding: 7px 0; font-size: 13px; color: #999 !important; background: #fff;}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder,textarea{ font-family: 'helvetica neue',arial,'hiragino sans gb',stheiti,'wenquanyi micro hei',\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,sans-serif !important; font-size: 13px; color: #999;}
+.topsearch  .searchbox input::-webkit-input-placeholder{ color:#999; opacity:1; -webkit-transition: opacity .5s; }
+.topsearch  .searchbox .search{width: 100%; padding-left: 34px; }
+.topsearch  .searchbox .sBtn{position: absolute; left: 0; top:-1px; width: 34px; height:24px;}
+.transparentmask{ position:fixed; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:100; display:none;}
+.transparentmask_social{ position:fixed; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:999; display:none;}
+.inputouter{ padding: 0 18px;}
+.forbtnpd{ padding: 0 15px;}
+.nodata { text-align: center; padding-top: 100px;}
+.tocomputer { display: block;  position: fixed;  right: 15px;  bottom: 70px;  width: 45px;  height: 45px; border: 1px solid #c5c5c5;  box-sizing: border-box;  -webkit-box-sizing: border-box;  border-radius: 50%;  -webkit-border-radius: 50%;  -moz-border-radius: 50%;  font-size: 12px;  color: #999999;  z-index: 99;  text-align: center; background: rgba(255,255,255,0.7);}
+.tocomputer>p{ margin-top: -5px;}
+.tocomputer:active{ background:rgba(17,197,209,0.7); color: #fff; border: 1px solid #fff;}
+.forline{ text-decoration:line-through;}
+.totop{ display: block; width: 40px; height: 40px; line-height: 37px; text-align: center; background: #11c5d1; color: #fff; -webkit-border-radius: 50%; position: fixed; right: 15px; bottom: 100px; box-shadow: 2px 2px 5px #d5d5d5; z-index: 9999; display: none;}
+.totop .iconfont{ font-size: 26px;}
+ /*tab样式*/
+.tabs>div{ float: left; font-size: 14px; color: #4c4c4b; height: 40px; line-height: 40px; text-align: center; background: #fff; position: relative; border-bottom: 1px solid #ddd;}
+.tabs>div:after{ content: ""; width: 1px; height: 20px; border-right: 1px dashed #dddddd; position: absolute; right: 0; top: 10px;}
+.tabs>div:last-child:after{ width: 0; height: 0;}
+.tabs>.active{ border-bottom: 2px solid #10B573; height: 40px;color: #0FB573;}
+/*论坛聚合页面样式*/
+.foruminner .inforum {margin: 5px 0; background: #fff;}
+.foruminner .inforum a{ display: block;  width: 100%; height: 50px; line-height: 50px; font-size: 14px; color:#4c4c4b; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; text-indent: 10px; position: relative;}
+.foruminner .inforum a:after{position: absolute; right: 15px;  top: 22px;  display: inline-block;  content: "";  width: 8px;  height: 8px;  border-left: 1px solid #ddd;  border-top: 1px solid #ddd;  transform: rotate(135deg); -moz-transform: rotate(135deg); -webkit-transform: rotate(135deg); -o-transform: rotate(135deg);}
+.foruminner .tabs>div{ width:16.66666666666666666666667%;}
+.foruminner .weui_panel_bd{position: fixed; top: 0;  z-index: 49;  visibility: hidden;  -webkit-transform: translateX(-100%);  -ms-transform: translateX(-100%);  transform: translateX(-100%); }
+.foruminner .weui_panel_bd.active{position: relative; z-index: 50;  visibility: visible;  -webkit-transition: -webkit-transform .3s;  transition: transform .3s;  -webkit-transform: translateX(0);  -ms-transform: translateX(0);  transform: translateX(0);}
+.foruminner .swiper-slide>p{ position: absolute; bottom: 0; left: 0; width: 100%; height: 24px; line-height: 24px; background: rgba(255,255,255,0.25); font-size: 12px; color: #fff; text-indent: 10px;}
+.foruminner .tabs{border-top: 1px solid #ddd;}
+.forum .swiper-pagination.swiper-pagination-bullets{ text-align: right; bottom:1px}
+.forum .headerbar .share{  position: absolute; right:0; top: 0;}
+.forum .headerbar .share a{display: block; width: 60px;  height: 50px;  text-align: center;  line-height: 50px; color: #fff;}
+.forum .headerbar .share a .iconfont{ font-size: 20px;}
+.forum .headerbar .share a:active{ background: rgba(219,219,219,0.5);}

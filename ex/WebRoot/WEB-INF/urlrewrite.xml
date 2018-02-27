@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 3.2//EN"
+        "http://tuckey.org/res/dtds/urlrewrite3.2.dtd">
+<urlrewrite>
+	<!-- rule用于页面重定向 -->
+	
+<!-- 	<rule>
+		<note>注释说明%{context-path}/这个表示添加了项目redirect</note>
+		<from>^/(\w+)/(\w+)/(\w+).jsp$</from>
+		<to type="forward">$1</to>
+	</rule> -->
+	
+		<rule>
+		    <note>待办界面</note>
+		    <from>^/([0-9]{0,8})/(\w+)/flow/waitwork/*</from>
+		    <to type="forward">/flow/waitwork?tenantId=$1</to>
+		  </rule>
+  
+  			  <rule>
+		    <note>拟办界面</note>
+		    <from>^/([0-9]{0,8})/(\w+)/flow/newwork/*</from>
+		    <to type="forward">/flow/newwork?tenantId=$1</to>
+		  </rule>
+	
+	<rule>
+		<note>REST服务跳转客户端接口内容</note>
+		<from>^/([0-9]{0,8})/(\w+)/Service.API/([\w\W]*)$</from>
+		<to >/rest/webserver/loadRestTemplet?tenantId=$1&amp;mobileType=$2&amp;$3</to>
+	</rule>
+	
+	<rule>
+		<note>REST服务跳转客户端接口内容第二地址</note>
+		<from>^/([0-9]{0,8})/(\w+)/(\w+)/Service.API/([\w\W]*)$</from>
+		<to >/rest/webserver/loadRestTemplet?tenantId=$1&amp;mobileType=$2&amp;otherparme=$3&amp;$4</to>
+	</rule>
+	
+	<rule>
+		<note>新版手机主界面</note>
+		<from>^/([0-9]{0,8})/(\w+)/([\w\W]*)$</from>
+		<to >/LoadPageTemplet?EngineArg=$3&amp;tenantId=$1&amp;mobileType=$2</to>
+	</rule>
+	
+	<rule>
+		<note>平板登陆界面</note>
+		<from>^/PadLogin.jsp$</from>
+		<to type="forward">LoadTemplet?EngineArg=PadLogin</to>
+	</rule>
+
+	<rule>
+		<note>平板主界面</note>
+		<from>^/padPortal.jsp$</from>
+		<to type="forward">LoadTemplet?EngineArg=pdaPortal</to>
+	</rule>
+
+	<rule>
+		<note>通知公告界面</note>
+		<from>^/niv([0-9]{0,8}).jsp$</from>
+		<to type="forward">LoadTemplet?EngineArg=pubcontent/pubgovnotices&amp;v=$1</to>
+	</rule>
+	<rule>
+		<note>通讯录界面</note>
+		<from>^/addressbook.jsp$</from>
+		<to type="forward">LoadTemplet?EngineArg=addressbook&amp;v=$1</to>
+	</rule>
+	
+	<rule>
+		<note>常用帮助</note>
+		<from>^/androidhelp.jsp$</from>
+		<to type="forward">LoadTemplet?EngineArg=androidhelp&amp;v=$1</to>
+	</rule>
+	
+	
+	<rule>
+		<note>附件下载</note>
+		<from>^/aopv([0-9]{0,8}).jsp$</from>
+		<to type="forward">LoadTemplet?EngineArg=AttachOutPut&amp;v=$1</to>
+	</rule>
+	
+<!-- 	<rule>
+		<note>拟办流程</note>
+		<from>^/newwork.jsp$</from>
+		<to type="forward">LoadTemplet?EngineArg=newwork&amp;v=$1</to>
+	</rule> -->
+
+	
+</urlrewrite>
+

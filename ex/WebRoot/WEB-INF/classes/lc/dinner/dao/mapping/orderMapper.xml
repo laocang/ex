@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+<mapper namespace="lc.watchshop.dao.IOrderDao">
+     <insert id="addOrder" parameterType="java.util.Map">
+      <selectKey resultType="int" keyProperty="bsm" order="BEFORE" >
+      select nextval('watchshop');
+    </selectKey>
+      insert into watchorder (bsm,product,name,tel,city,area,addr,price,payway,privince,beizhu) values (#{bsm},#{product,jdbcType=VARCHAR},#{name,jdbcType=VARCHAR},#{tel},#{city,jdbcType=VARCHAR},#{area,jdbcType=VARCHAR},#{addr,jdbcType=VARCHAR},#{price},#{payway,jdbcType=VARCHAR},#{privince,jdbcType=VARCHAR},#{beizhu,jdbcType=VARCHAR})
+    </insert>
+</mapper>

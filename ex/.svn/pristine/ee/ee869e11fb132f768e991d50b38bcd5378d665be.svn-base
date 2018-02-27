@@ -1,0 +1,50 @@
+## mysql
+jdbc.driverClassName=com.mysql.jdbc.Driver
+jdbc.url=jdbc\:mysql\://127.0.0.1\:3306/telewarecs?useUnicode\=true&characterEncoding\=utf8
+jdbc.username=root
+jdbc.password=root
+
+
+## oracle
+jdbc.driverClassNamer=oracle.jdbc.driver.OracleDriver
+jdbc.urlr=jdbc\:oracle\:thin\:@10.0.7.57\:1521\:orcl
+jdbc.usernamer=PDA
+jdbc.passwordr=PDA
+jdbc.idleConnectionTestPeriodInMinutes=60
+jdbc.idleMaxAgeInMinutes=240
+jdbc.maxConnectionsPerPartition=50
+jdbc.minConnectionsPerPartition=5
+jdbc.partitionCount=1
+jdbc.acquireIncrement=5
+jdbc.statementsCacheSize=100
+jdbc.releaseHelperThreads=3
+jdbc.poolAvailabilityThreshold=20
+jdbc.connectionTimeout=600000000000
+
+
+##oracle BoneCPDataSource database
+tlw.driverClassName=oracle.jdbc.driver.OracleDriver
+tlw.jdbcUrl=jdbc\:oracle\:thin\:@10.0.7.125\:1521\:orcl
+tlw.username=hnoa
+tlw.password=hnoa
+tlw.idleConnectionTestPeriod=60
+tlw.idleMaxAge=240
+tlw.maxConnectionsPerPartition=50
+tlw.minConnectionsPerPartition=5
+tlw.partitionCount=1
+tlw.acquireIncrement=5
+tlw.statementsCacheSize=100
+tlw.releaseHelperThreads=3
+tlw.poolAvailabilityThreshold=10
+tlw.connectionTimeout=3000
+
+
+
+##download url address
+downloadUrl=http\://192.168.100.220\:8080/TelewareSysAdminWeb
+
+###wcf service
+tlw.wcfserviceUrl=http\://10.0.7.57/wcf
+tlw.datasource=development
+
+

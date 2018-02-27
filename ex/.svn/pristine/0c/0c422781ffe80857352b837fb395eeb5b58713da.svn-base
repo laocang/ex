@@ -1,0 +1,32 @@
+### direct log messages to stdout ###
+log4j.appender.stdout=org.apache.log4j.ConsoleAppender
+log4j.appender.stdout.Target=System.out
+log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
+log4j.appender.stdout.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss} %5p %l - %m%n
+
+### direct messages to file log4j.log ###
+log4j.appender.file=org.apache.log4j.DailyRollingFileAppender
+log4j.appender.file.File=${catalina.base}/logs/demo/log4j_
+log4j.appender.file.DatePattern=yyyy-MM-dd'.log'
+#log4j.appender.file.ImmediateFlush=true
+log4j.appender.file.layout=org.apache.log4j.PatternLayout
+log4j.appender.file.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss} %5p %l - %m%n
+
+### direct messages to file database ###
+###log4j.appender.database=org.apache.log4j.jdbc.JDBCAppender
+###log4j.appender.database.driver=oracle.jdbc.OracleDriver
+###log4j.appender.database.URL=jdbc:oracle:thin:@10.0.7.57:1521:orcl
+###log4j.appender.database.user=PDA
+###log4j.appender.database.password=PDA
+###log4j.appender.database.sql=insert into logs (id,system,methodname,time,type,msg) values (s_logs.nextval,'%X{system}','%l', to_date('%d{yyyy-MM-dd HH:mm:ss}','yyyy-mm-dd hh24:mi:ss'),'%p','%m')
+###log4j.appender.database.layout=org.apache.log4j.PatternLayout
+
+### global configuration ###
+log4j.rootLogger=warn,stdout,file
+
+### specific package configuration ###
+###log4j.logger.teleware=debug,stdout,file
+
+### package is not from global management ###
+log4j.additivity=false
+log4j.additivity.teleware=false

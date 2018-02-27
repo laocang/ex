@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"  
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<properties resource="jdbc.properties">
+		<!-- <property name="jdbc.driverClassName" value="com.mysql.jdbc.Driver"/>
+		<property name="jdbc.url" value="jdbc:mysql://127.0.0.1:3306/telewarecs?useUnicode=true&amp;characterEncoding=UTF-8"/>
+		<property name="jdbc.username" value="root"/>
+		<property name="jdbc.password" value="root"/> -->
+	</properties>
+	<!-- <settings>
+		<setting name="logImpl" value="LOG4J" />
+	</settings> -->
+	
+	<typeAliases>  
+       <package name="demo.domain.model"/>
+    </typeAliases> 
+	
+	
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="${jdbc.driverClassNamer}" />
+				<property name="url" value="${jdbc.urlr}" />
+				<property name="username" value="${jdbc.usernamer}" />
+				<property name="password" value="${jdbc.passwordr}" />
+				<property name="poolMaximumActiveConnections" value="20"/>
+				<property name="poolMaximumIdleConnections" value="5"/>
+				<property name="poolMaximumCheckoutTime" value="20000"/>
+				<property name="poolTimeToWait" value="20000"/>
+			</dataSource>
+		</environment>
+	</environments>
+	
+	<mappers>
+		<mapper resource="demo/dao/mapper/testMapper.xml" />
+	</mappers>
+</configuration> 

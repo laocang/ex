@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="demo.dao.IRecordDao">
+	<select id="login" resultType="demo.domain.model.userModel">
+		select * from user where logonId = #{0}
+	</select>
+	
+	<update id="updateLoginTime">
+		update user set lastlogintime = sysdate() where id = #{0}
+	</update>
+	
+	<insert id="addRecord" parameterType="demo.domain.model.recordModel" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+    insert into record(createtime,updatetime,subject,date,userid,content) 
+    values(sysdate(),sysdate(),#{subject},#{date},#{userid},#{content})
+	</insert>
+	
+	<select id="getRecords" resultType="demo.domain.model.recordModel">
+		select * from record where userid = #{0} order by date desc
+	</select>
+</mapper>

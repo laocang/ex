@@ -1,0 +1,62 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background: #FFFFFF;
+	-webkit-touch-callout: none;
+}
+
+body,table,tr,td,a {
+	color: #000000;
+}
+
+html {
+	height: 100%;
+	font-family: SimSun;
+	color: #818181;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #ebebeb;
+}
+
+.btngetmore{
+	line-height: 1.4em;
+	border-width: 0;
+	font-size: 1.2rem;
+	font-weight: bold;
+	letter-spacing: .3em;
+	text-indent: .5em;
+	border-radius: 5px;
+	text-align: center;
+	cursor: pointer;
+	color: #000;
+	background-color: #fff;
+	font-family: "Microsoft Yahei";
+}
+
+.header{
+	word-break: break-word;
+	white-space:normal; 
+    overflow:auto;
+}
+  .borderbottomStyle
+  {
+  border-bottom:1px solid #D7D7D7;
+  font-weight:normal;
+
+  }
+.workFlow_map { margin-left:0.01em;}
+.workFlow_list>li:first-child::after{ height:.7em; position:absolute; top:0; left:-1px; border-left:1px solid #fff; content:'';}
+.workFlow_list>li { list-style-type:none;position: relative; color: #000; padding: 0 .5em 0 1.7em;  border-left: 1px solid #b2b2b2;}
+.workFlow_list>li.done { color: #000;font-weight:bold}
+.workFlow_list>li:first-child::before { height: 4em; }
+.flowIcon { width:1em; height:1em; border: .2em solid #b2b2b2; box-sizing:border-box; background: #fff; border-radius:50%; position:absolute; left:-.5em; top: .7em; }
+.done .flowIcon { border-color:#3cc51f; }
+.flowTitle { padding: .5em 0 0 .4em; }
+.flowPerson { padding: .5em 0 0 .4em; }
+.flowResult { padding: .1em 1.5em .2em .4em; text-align:right; border-bottom: 1px solid #b2b2b2; }
+.flowlogIcon { width:1em; height:1em; border: .2em solid #68a40d; box-sizing:border-box; background: #68a40d; border-radius:50%; position:absolute; left:-.5em; top: .7em; }

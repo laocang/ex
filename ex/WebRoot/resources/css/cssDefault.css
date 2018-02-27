@@ -1,0 +1,441 @@
+body {
+	padding: 0px;
+	margin: 0px;
+	font-size: 12px;
+	font-family: "宋体";
+}
+
+a {
+	text-decoration: none;
+	padding: 0px;
+	margin: 0px;
+}
+/***左菜单头部***/
+.divMenuHead {
+	height: 58px;
+	background: url(../images/pda/divMenuHead.jpg) repeat-x left top;
+	position: relative;
+	width: 300px;
+}
+
+.divMenuHeadTopFrame {
+	width: 100%;
+}
+
+.divMenuHeadLeft {
+	float: left;
+	background: url(../images/pda/divMenuHeadLeft.jpg) no-repeat left top;
+	width: 9px;
+	height: 58px;
+}
+
+.divMenuHeadRight {
+	float: right;
+	background: url(../images/pda/divMenuHeadRight.jpg) no-repeat -3px top;
+	width: 9px;
+	height: 58px;
+}
+
+.divMenuHeadRightIcon {
+	position: absolute;
+	width: 3px;
+	height: 58px;
+	background: url(../images/pda/divMenuHeadLeft.jpg) no-repeat left top;
+	right: 0px;
+	top: 0px;
+}
+
+.divMenuHeadLeft1 {
+	float: left;
+	background: url(../images/pda/divMenuHeadLeft.jpg) no-repeat -3px top;
+	width: 9px;
+	height: 58px;
+}
+
+.divMenuHeadRight1 {
+	float: right;
+	background: url(../images/pda/divMenuHeadRight.jpg) no-repeat right top;
+	width: 9px;
+	height: 58px;
+}
+
+.divMenuHeadCont {
+	height: 34px;
+	width: 121px;
+	background: url(../images/pda/divMenuHeadCont.png) no-repeat left top;
+	position: absolute;
+	left: 50%;
+	margin-left: -60px;
+	top: 12px;
+}
+/***左菜单内容***/
+.leftMenu {
+	position: relative;
+	width: 298px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+a.divMenu {
+	height: 76px;
+	display: block;
+	background: url(../images/pda/divMenuBG.jpg) repeat-x left top;
+	position: relative;
+	cursor: pointer;
+	width: 282px;
+}
+
+a:hover.divMenu,a.divMenuSL {
+	background: url(../images/pda/divMenuBGSL.jpg) repeat-x left top;
+	height: 76px;
+	display: block;
+	position: relative;
+	cursor: pointer;
+	width: 282px;
+}
+
+.divMenuImg {
+	position: absolute;
+	left: 3px;
+	top: 4px;
+	background: url(../images/pda/icon1.png) no-repeat left top;
+	width: 70px;
+	height: 72px;
+}
+
+.icon2 {
+	background: url(../images/pda/icon2.png) no-repeat left top;
+}
+
+.icon3 {
+	background: url(../images/pda/icon3.png) no-repeat left top;
+}
+
+.icon4 {
+	background: url(../images/pda/icon4.png) no-repeat left top;
+}
+
+.icon5 {
+	background: url(../images/pda/icon5.png) no-repeat left top;
+}
+
+.icon6 {
+	background: url(../images/pda/icon6.png) no-repeat left top;
+}
+
+.icon7 {
+	background: url(../images/pda/icon7.png) no-repeat left top;
+}
+
+.icon8 {
+	background: url(../images/pda/icon8.png) no-repeat left top;
+}
+
+.icon9 {
+	background: url(../images/pda/icon9.png) no-repeat left top;
+}
+
+.icon10 {
+	background: url(../images/pda/icon10.png) no-repeat left top;
+}
+
+.icon11 {
+	background: url(../images/pda/icon11.png) no-repeat left top;
+}
+
+.icon12 {
+	background: url(../images/pda/icon12.png) no-repeat left top;
+}
+
+.divMenuIcon {
+	position: absolute;
+	top: 27px;
+	right: 16px;
+	background: url(../images/pda/MenuMore.jpg) no-repeat left top;
+	width: 22px;
+	height: 22px;
+}
+
+.divMenuContent {
+	padding: 13px 45px 0px 77px;
+}
+
+.bigFonts {
+	font-size: 18px;
+	font-family: "宋体";
+	text-align: left;
+	height: 20px;
+	line-height: 22px;
+	color: Black;
+	font-weight: bold;
+}
+
+.smallFonts {
+	font-size: 16px;
+	font-family: "宋体";
+	text-align: left;
+	height: 20px;
+	line-height: 22px;
+	color: #3E484F;
+	font-weight: normal;
+	position: relative;
+	left: 2px;
+}
+
+.FenGeXian {
+	width: 6px;
+	background: url(../images/pda/fengexian.jpg) repeat-y left top;
+	position: absolute;
+	right: 0px;
+	top: 58px;
+	height: 100%;
+}
+/******TopFrame******/
+.backButton {
+	width: 65px;
+	height: 37px;
+	position: absolute;
+	top: 10px;
+	left: 60px;
+}
+
+.backButton a {
+	width: 65px;
+	height: 37px;
+	background: url(../images/pda/backButton.png) no-repeat left top;
+	cursor: pointer;
+	text-decoration: none;
+	display: block;
+}
+
+.forwardButton {
+	width: 65px;
+	height: 37px;
+	position: absolute;
+	top: 10px;
+	right: 60px;
+}
+
+.forwardButton a {
+	width: 65px;
+	height: 37px;
+	background: url(../images/pda/forwardButton.png) no-repeat left top;
+	cursor: pointer;
+	text-decoration: none;
+	display: block;
+}
+
+.divMenutitle {
+	width: 95px;
+	height: 27px;
+	position: absolute;
+	top: 15px;
+	left: 50%;
+	margin-left: -48px;
+	left
+	top;
+}
+
+.divMenutitle1 {
+	width: 95px;
+	height: 27px;
+	position: absolute;
+	top: 15px;
+	left: 50%;
+	margin-left: -48px;
+	background: url(../images/pda/divMenutitle1.png) no-repeat left top;
+}
+
+.divMenutitle2 {
+	width: 95px;
+	height: 27px;
+	position: absolute;
+	top: 15px;
+	left: 50%;
+	margin-left: -48px;
+	background: url(../images/pda/divMenutitle2.png) no-repeat left top;
+}
+
+.divMenutitle3 {
+	width: 95px;
+	height: 27px;
+	position: absolute;
+	top: 15px;
+	left: 50%;
+	margin-left: -48px;
+	background: url(../images/pda/divMenutitle3.png) no-repeat left top;
+}
+
+.divMenutitle4 {
+	width: 95px;
+	height: 27px;
+	position: absolute;
+	top: 15px;
+	left: 50%;
+	margin-left: -48px;
+	background: url(../images/pda/divMenutitle4.png) no-repeat left top;
+}
+
+.divMenutitle5 {
+	width: 95px;
+	height: 27px;
+	position: absolute;
+	top: 15px;
+	left: 50%;
+	margin-left: -48px;
+	background: url(../images/pda/divMenutitle5.png) no-repeat left top;
+}
+
+.divMenutitle6 {
+	width: 95px;
+	height: 27px;
+	position: absolute;
+	top: 15px;
+	left: 50%;
+	margin-left: -48px;
+	background: url(../images/pda/divMenutitle6.png) no-repeat left top;
+}
+
+.divMenutitle7 {
+	width: 95px;
+	height: 27px;
+	position: absolute;
+	top: 15px;
+	left: 50%;
+	margin-left: -48px;
+	background: url(../images/pda/divMenutitle7.png) no-repeat left top;
+}
+
+.divMenutitle8 {
+	width: 95px;
+	height: 27px;
+	position: absolute;
+	top: 15px;
+	left: 50%;
+	margin-left: -48px;
+	background: url(../images/pda/divMenutitle8.png) no-repeat left top;
+}
+
+.divMenutitle9 {
+	width: 95px;
+	height: 27px;
+	position: absolute;
+	top: 15px;
+	left: 50%;
+	margin-left: -48px;
+	background: url(../images/pda/divMenutitle9.png) no-repeat left top;
+}
+
+.divMenutitle10 {
+	width: 95px;
+	height: 27px;
+	position: absolute;
+	top: 15px;
+	left: 50%;
+	margin-left: -48px;
+	background: url(../images/pda/divMenutitle10.png) no-repeat left top;
+}
+
+.divMenutitle11 {
+	width: 95px;
+	height: 27px;
+	position: absolute;
+	top: 15px;
+	left: 50%;
+	margin-left: -48px;
+	background: url(../images/pda/divMenutitle11.png) no-repeat left top;
+}
+
+.divMenutitle12 {
+	width: 95px;
+	height: 27px;
+	position: absolute;
+	top: 15px;
+	left: 50%;
+	margin-left: -48px;
+	background: url(../images/pda/divMenutitle12.png) no-repeat left top;
+}
+
+.divMenutitle13 {
+	width: 95px;
+	height: 27px;
+	position: absolute;
+	top: 15px;
+	left: 50%;
+	margin-left: -48px;
+	background: url(../images/pda/divMenutitle13.png) no-repeat left top;
+}
+/**********contentFrame************/
+.divcontentFrame {
+	padding: 10px;
+}
+
+.divSelectList {
+	padding: 5px 5px 5px 20px;
+	border-bottom: 2px dotted #ADBDC5;
+}
+
+.divSelectList .SelectOption {
+	width: 150px;
+}
+
+.divContentList {
+	overflow-y: auto;
+}
+
+.divContentList ul,.divContentList ul li {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	cursor: pointer;
+}
+
+.divContentList ul {
+	padding: 5px 5px 5px 20px;
+	border-bottom: 2px dotted #ADBDC5;
+	margin-right: 10px;
+}
+
+.areaEdit {
+	background: url(../images/pda/edit.jpg) no-repeat left center;
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	cursor: pointer;
+}
+
+.spanforArea,.spanforTime {
+	font-size: 18px;
+	font-family: "宋体";
+	color: #393939;
+	font-weight: 500;
+}
+
+.ContentTitle {
+	text-indent: 26px;
+	padding-top: 5px ! important;
+	font-size: 18px;
+	font-family: "宋体";
+	color: Black;
+	font-weight: 500;
+}
+
+.sidebar a:link,.sidebar a:visited {
+	color: #FF0000;
+	text-decoration: none;
+}
+
+.sidebar a:hover,.sidebar a:active {
+	color: #000000;
+	text-decoration: underline;
+}
+
+.appsidebar a:link,.appsidebar a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+
+.appsidebar a:hover,.appsidebar a:active {
+	color: #000000;
+	text-decoration: underline;
+}
